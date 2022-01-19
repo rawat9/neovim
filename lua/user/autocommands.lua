@@ -28,6 +28,12 @@ vim.cmd [[
     autocmd!
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
   augroup end
+
+  augroup _esc_mapping
+    autocmd!
+    autocmd InsertEnter * set timeoutlen=500
+    autocmd InsertLeave * set timeoutlen=100
+  augroup end
 ]]
 
 -- Autoformat
