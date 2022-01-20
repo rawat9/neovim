@@ -65,6 +65,7 @@ return packer.startup(function(use)
   use "navarasu/onedark.nvim"
   use "shaunsingh/nord.nvim"
   use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+  use 'tiagovla/tokyodark.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
