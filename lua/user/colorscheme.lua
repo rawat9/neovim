@@ -5,7 +5,7 @@ vim.cmd [[ let g:onedark_config = {
 
 vim.cmd [[
 try
-  colorscheme onedark
+  colorscheme darkplus
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
