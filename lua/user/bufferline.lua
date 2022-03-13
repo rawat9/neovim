@@ -15,10 +15,8 @@ bufferline.setup {
     -- as an escape hatch for people who cannot bear it for whatever reason
     indicator_icon = "▎",
     buffer_close_icon = "",
-    -- buffer_close_icon = '',
     modified_icon = "●",
     close_icon = "",
-    -- close_icon = '',
     left_trunc_marker = "",
     right_trunc_marker = "",
     --- name_formatter can be used to change the buffer's label in the bufferline.
@@ -33,7 +31,7 @@ bufferline.setup {
     -- end,
     max_name_length = 30,
     max_prefix_length = 30, -- prefix used when a buffer is de-duplicated
-    tab_size = 21,
+    tab_size = 20,
     diagnostics = false, -- | "nvim_lsp" | "coc",
     diagnostics_update_in_insert = false,
     -- diagnostics_indicator = function(count, level, diagnostics_dict, context)

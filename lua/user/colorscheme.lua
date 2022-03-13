@@ -1,13 +1,6 @@
-vim.cmd [[ let g:onedark_config = {
-    \ 'style': 'darker',
-\}
-]]
+-- ONEDARK --
+require('onedark').setup {
+    style = 'darker'
+}
+require('onedark').load()
 
-vim.cmd [[
-try
-  colorscheme darkplus
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-  set background=dark
-endtry
-]]
