@@ -9,5 +9,3 @@ Make sure to remove or move your current `nvim` directory
 ```
 git clone https://github.com/rawat9/neovim.git ~/.config/nvim
 ```
-
-Run `nvim` and wait for the plugins to be installed 
