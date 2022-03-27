@@ -17,7 +17,7 @@ local dashboard = require("alpha.themes.dashboard")
 -- }
 
 
-dashboard.section.header.val = {
+local header = {
 
        [[                                                                ]],
        [[ $$\   $$\ $$$$$$$$\  $$$$$$\  $$\    $$\ $$$$$$\ $$\      $$\  ]],
@@ -31,6 +31,7 @@ dashboard.section.header.val = {
        [[                                                                ]]
 }
 
+dashboard.section.header.val = header
 
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
