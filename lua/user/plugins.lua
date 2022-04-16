@@ -65,8 +65,8 @@ return packer.startup(function(use)
   use "navarasu/onedark.nvim"
   use "shaunsingh/nord.nvim"
   use "ellisonleao/gruvbox.nvim"
-  use 'tiagovla/tokyodark.nvim'
   use "projekt0n/github-nvim-theme"
+  use 'tanvirtin/monokai.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
