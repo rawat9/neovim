@@ -1,6 +1,6 @@
 local status_ok, alpha = pcall(require, "alpha")
 if not status_ok then
-	return
+    return
 end
 
 local dashboard = require("alpha.themes.dashboard")
@@ -19,37 +19,37 @@ local dashboard = require("alpha.themes.dashboard")
 
 local header = {
 
-       [[                                                                ]],
-       [[ $$\   $$\ $$$$$$$$\  $$$$$$\  $$\    $$\ $$$$$$\ $$\      $$\  ]],
-       [[ $$$\  $$ |$$  _____|$$  __$$\ $$ |   $$ |\_$$  _|$$$\    $$$ | ]],
-       [[ $$$$\ $$ |$$ |      $$ /  $$ |$$ |   $$ |  $$ |  $$$$\  $$$$ | ]],
-       [[ $$ $$\$$ |$$$$$\    $$ |  $$ |\$$\  $$  |  $$ |  $$\$$\$$ $$ | ]],
-       [[ $$ \$$$$ |$$  __|   $$ |  $$ | \$$\$$  /   $$ |  $$ \$$$  $$ | ]],
-       [[ $$ |\$$$ |$$ |      $$ |  $$ |  \$$$  /    $$ |  $$ |\$  /$$ | ]],
-       [[ $$ | \$$ |$$$$$$$$\  $$$$$$  |   \$  /   $$$$$$\ $$ | \_/ $$ | ]],
-       [[ \__|  \__|\________| \______/     \_/    \______|\__|     \__| ]],
-       [[                                                                ]]
+    [[                                                                ]],
+    [[ $$\   $$\ $$$$$$$$\  $$$$$$\  $$\    $$\ $$$$$$\ $$\      $$\  ]],
+    [[ $$$\  $$ |$$  _____|$$  __$$\ $$ |   $$ |\_$$  _|$$$\    $$$ | ]],
+    [[ $$$$\ $$ |$$ |      $$ /  $$ |$$ |   $$ |  $$ |  $$$$\  $$$$ | ]],
+    [[ $$ $$\$$ |$$$$$\    $$ |  $$ |\$$\  $$  |  $$ |  $$\$$\$$ $$ | ]],
+    [[ $$ \$$$$ |$$  __|   $$ |  $$ | \$$\$$  /   $$ |  $$ \$$$  $$ | ]],
+    [[ $$ |\$$$ |$$ |      $$ |  $$ |  \$$$  /    $$ |  $$ |\$  /$$ | ]],
+    [[ $$ | \$$ |$$$$$$$$\  $$$$$$  |   \$  /   $$$$$$\ $$ | \_/ $$ | ]],
+    [[ \__|  \__|\________| \______/     \_/    \______|\__|     \__| ]],
+    [[                                                                ]]
 }
 
 dashboard.section.header.val = header
 
 dashboard.section.buttons.val = {
-	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
-	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-	dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
-	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-	dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
-	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+    dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
+    dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+    dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
+    dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
+    dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
+    dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
+    dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
 -- local function footer()
 -- NOTE: requires the fortune-mod package to work
-  -- local handle = io.popen("fortune")
-  -- local fortune = handle:read("*a")
-  -- handle:close()
-  -- return fortune
-  -- return "chrisatmachine.com"
+-- local handle = io.popen("fortune")
+-- local fortune = handle:read("*a")
+-- handle:close()
+-- return fortune
+-- return "chrisatmachine.com"
 -- end
 
 -- dashboard.section.footer.val = footer()
