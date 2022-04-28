@@ -20,7 +20,6 @@ local config = {
         '-configuration', '~/.local/share/nvim/lsp_servers/jdtls/config_mac',
         '-data', workspace_folder,
     },
-
     settings = {
         java = {
             signatureHelp = { enabled = true },
@@ -48,7 +47,7 @@ local config = {
                 }
             },
         }
-    },
+    }
 }
 
 return config
