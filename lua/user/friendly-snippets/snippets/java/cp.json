@@ -1,0 +1,9 @@
+{
+  "readList": {
+    "prefix": "readList",
+    "body": ["BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));",
+            "",
+            "int[] array = Arrays.stream(reader.readLine().split(\"\\s\")).mapToInt(Integer::parseInt).toArray();"],
+    "description": "CP: Read space-separated integers"
+  }
+}

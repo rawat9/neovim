@@ -150,7 +150,11 @@
       },
       {
         "language": "java",
-        "path": "./snippets/java.json"
+        "path": "./snippets/java/base.json"
+      },
+      {
+        "language": "java",
+        "path": "./snippets/java/cp.json"
       },
       {
         "language": "julia",
@@ -242,6 +246,10 @@
       {
         "language": "python",
         "path": "./snippets/python/python.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/cp.json"
       },
       {
         "language": "python",

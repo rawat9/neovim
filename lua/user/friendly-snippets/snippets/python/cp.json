@@ -1,0 +1,22 @@
+{
+  "ri": {
+    "prefix": "ri",
+    "body": "int(input())",
+    "description": "CP: Read integer"
+  },
+  "rl": {
+    "prefix": "rl",
+    "body": "list(map(int, input().split()))",
+    "description": "CP: Read List"
+  },
+  "load": {
+    "prefix": "load",
+    "body": "import sys\nimport collections\nimport math\nimport itertools\nimport string\nimport numpy as np",
+    "description": "CP: Read integer"
+  },
+  "algo.binarysearch": {
+    "prefix": "algo.binarysearch",
+    "body": "def binary_search(arr, target):\n\tlow = 0\n\thigh = len(arr) - 1\n\tmid = 0\n\twhile low <= high:\n\t\tmid = (high + low) // 2\n\t\tif arr[mid] < target:\n\t\t\tlow = mid + 1\n\t\telif arr[mid] > target:\n\t\t\thigh = mid - 1\n\t\telse:\n\t\t\treturn mid\n\n\treturn -1",
+    "description": "Algorithms: Binary Search\nTime Complexity: O(logN)"
+  }
+}
