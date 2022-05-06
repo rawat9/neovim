@@ -11,10 +11,12 @@
 - If you already have a `~/.config/nvim` folder, make a backup with:
 
 ```bash
+
 mv ~/.config/nvim ~/.config/NVIM.BAK
 ```
 
 - Then go ahead and run the following command:
+
 ```bash
 git clone https://github.com/rawat9/neovim.git ~/.config/nvim
 ```
