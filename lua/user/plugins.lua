@@ -59,6 +59,7 @@ return packer.startup(function(use)
     use("folke/which-key.nvim")
     use("rcarriga/nvim-notify") -- cool notifications
     use("tpope/vim-surround")
+    use 'karb94/neoscroll.nvim'
 
     -- Colorschemes
     use("lunarvim/darkplus.nvim")
@@ -87,6 +88,8 @@ return packer.startup(function(use)
     use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
     use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
     use("jose-elias-alvarez/nvim-lsp-ts-utils")
+
+    -- Java
     use("mfussenegger/nvim-jdtls")
 
     -- Telescope
