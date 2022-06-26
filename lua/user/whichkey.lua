@@ -89,13 +89,18 @@ local mappings = {
     ["q"] = { "<cmd>wq!<CR>", "Quit" },
     ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
     ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-    ["r"] = { "<cmd>exec '!python3' shellescape(@%, 1)<CR>", "Run" },
     ["f"] = {
         "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
         "Find files",
     },
     ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
     ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+
+    r = {
+        name = 'Run',
+        p = { "<cmd>exec '!python3' shellescape(@%, 1)<CR>", "Python3" },
+        j = { "<cmd>exec '!java' shellescape(@%, 1)<CR>", "Java" },
+    },
 
     p = {
         name = "Packer",
